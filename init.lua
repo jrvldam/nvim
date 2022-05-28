@@ -11,9 +11,7 @@ require('keys') 	-- Keymaps
 require('plug') 	-- Plugins
 
 -- Plugins
-require('nvim-tree').setup{
-    auto_close = false
-}
+require('nvim-tree').setup{}
 require('lualine').setup {
     options = {
         theme = 'gruvbox'

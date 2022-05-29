@@ -9,6 +9,11 @@ keymap('n', '<Leader><Esc>', ':nohlsearch<CR>', options)
 keymap('n', '<C-Tab>', ':bn<CR>', options) -- Next buffer
 keymap('n', '<C-S-Tab>', ':bp<CR>', options) -- Previous buffer
 keymap('n', '<Leader>bb', ':b#<CR>', options) -- Back to last edited buffer
+keymap('n', '0', '^', options) -- Easy access to the start to the line
+keymap('n', 'k', 'gk', options) -- Let's be reasonable, shall we?
+keymap('n', 'j', 'gj', options) -- Let's be reasonable, shall we?
+keymap('v', '<', '<gv', options) -- Indentig visual block
+keymap('v', '>', '>gv', options) -- Indentig visual block
 
 -- Files tree
 keymap('n', '<Leader>b', ':NvimTreeToggle<CR>', options)
@@ -17,6 +22,9 @@ keymap('n', '<Leader>r', ':NvimTreeRefresh<CR>', options)
 
 -- Terminal
 keymap('n', '<Leader>y', ':FloatermToggle<CR>', options)
+
+-- Git
+keymap('n', '<Leader>gg', ':G<CR>', options)
 
 -- Search files
 keymap('n', '<Leader>ff', ':Telescope find_files<CR>', options)

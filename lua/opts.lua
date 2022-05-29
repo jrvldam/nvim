@@ -43,6 +43,7 @@ cmd('colorscheme gruvbox')
 
 cmd('set nospell')
 cmd('set autowrite')
+cmd('set clipboard+=unnamedplus')
 
 vim.api.nvim_create_autocmd('BufEnter', {
     nested = true,

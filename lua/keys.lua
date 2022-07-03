@@ -12,8 +12,8 @@ keymap('n', '<Leader>bb', ':b#<CR>', options) -- Back to last edited buffer
 keymap('n', '0', '^', options) -- Easy access to the start to the line
 keymap('n', 'k', 'gk', options) -- Let's be reasonable, shall we?
 keymap('n', 'j', 'gj', options) -- Let's be reasonable, shall we?
-keymap('v', '<', '<gv', options) -- Indentig visual block
-keymap('v', '>', '>gv', options) -- Indentig visual block
+keymap('v', '<', '<gv', options) -- Indenting visual block
+keymap('v', '>', '>gv', options) -- Indenting visual block
 
 -- Files tree
 keymap('n', '<Leader>b', ':NvimTreeToggle<CR>', options)
